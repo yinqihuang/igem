@@ -55,7 +55,10 @@
 /* insta */
 .footer li:nth-child(3) .fa {
     content: 'f16d';
-    background: linear-gradient(to-bottom-left,#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;

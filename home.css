@@ -35,7 +35,7 @@
     margin-left: 0.4rem;
 }
 /* github */
-.footer li .fa {
+.footer li:nth-child(1) .fa {
     content: 'f09b';
     background: #333;
     height: 3rem;
@@ -44,7 +44,7 @@
     margin-left: 0.4rem;
 }
 /* facebook */
-.footer li .fa {
+.footer li:nth-child(2) .fa {
     content: 'f09a';
     background: #3b5998;
     height: 3rem;
@@ -53,7 +53,7 @@
     margin-left: 0.4rem;
 }
 /* insta */
-.footer li .fa {
+.footer li:nth-child(3) .fa {
     content: 'f16d';
     background: linear-gradient(to-bottom-left,#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     height: 3rem;
@@ -62,7 +62,7 @@
     margin-left: 0.4rem;
 }
 /* linkedin */
-.footer li .fa {
+.footer li:nth-child(4) .fa {
     content: 'f0e1';
     background: #0e76a8;
     height: 3rem;
@@ -71,7 +71,7 @@
     margin-left: 0.4rem;
 }
 /* youtube */
-.footer li .fa {
+.footer li:nth-child(5) .fa {
     content: 'f167';
     background: #FF0000;
     height: 3rem;

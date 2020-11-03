@@ -1,6 +1,7 @@
 <div class="container">
         <div>iGEM <br> TORONTO <br>
         <span class="txt-type" data-wait="2000" data-words='["Synthetic Biology","Ethics","Industrial Applications","Social Responsibilities","Engineering"]'></span>
+        <span class="cursor"></span>
         </div>
         <script defer>         	
             class TypeWriter {
@@ -23,7 +24,7 @@
                     this.txt = fullTxt.substring(0, this.txt.length + 1);
                 }
                 this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-                let typeSpeed = 350;
+                let typeSpeed = 200;
                 if(this.isDeleting) {
                     typeSpeed /= 2;
                 }
@@ -33,7 +34,7 @@
                 } else if(this.isDeleting && this.txt === '') {
                 this.isDeleting = false;
                 this.wordIndex++;
-                typeSpeed = 600;
+                typeSpeed = 400;
                 }
                 setTimeout(() => this.type(), typeSpeed);
             }

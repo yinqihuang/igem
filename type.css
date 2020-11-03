@@ -5,6 +5,12 @@
 	font-size: 4rem;
 	color: #333333;
 }
-.txt-type > .txt {
-	border-right: 0.2rem solid #000;
+.cursor {
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+	50% {
+	  border-color: transparent;
+	}
 }

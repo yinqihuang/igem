@@ -6,7 +6,7 @@
 	color: #333333;
 }
 .cursor {
-	border-right: .05em solid;
+	border-right: .05rem solid;
 	animation: caret 1s steps(1) infinite;
 }
 @keyframes caret {

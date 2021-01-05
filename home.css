@@ -1,8 +1,7 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    line-height: 1.5;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     background-color: #fff;
 }
@@ -18,97 +17,432 @@ body {
     box-shadow: #F0F5F9 0.1em 0.1em 0.3em;
 }
 
+.logo {
+    height: 1.8em;
+    margin: 1em;
+}
+
 a {
     letter-spacing: 0.05em;
+    font-family: 'Lato', sans-serif;
     font-size: 0.7em;
-    color: #999999;
+    color: #808080;
     margin-left: 0.8em;
 }
 
 a:hover {
     color: #19415A;
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: gray;
+} 
+
+.sub {
+    left: 10vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+.sub .span_1, .sub .span_2 {
+    display: block;
+}
+
+.sub .span_1 {
+    font-weight: 300;
+}
+
+.sub .span_2 {
+    font-weight: 600;
 }
 
 /* Section a */
 
 .section-a {
     z-index: 1; 
-    top: 2em;
     position: relative;
-    padding: 2em;
+    width: 100vw;
+    height: 125vh;
+}
+
+.section-a #igem {
+    position: relative;
+    top: 16vh;
+    left: 7vw;
+    width: 50vh;
+    z-index: 2;
+}
+
+.section-a #background {
+    position: absolute;
+    top:0em;
+    left: 5vw;
+    width: 60%;
+    z-index: -1;
+}
+
+.section-a #type {
+    position: relative;
+    top: 0.3em;
+    left: 0vw;
+    font-size: 0.7em;
+    font-weight: 200;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #333345;
+    display: inline;
+    z-index: 2;
+}
+
+.cursor {
+    border-right: .07em solid;
+	animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+	50% {
+	  border-color: transparent;
+	}
+}
+
+.section-a #protein {
+    position: absolute;
+    top: 55vh;
+    width: 100vw;
+    padding: 1em;
+}
+
+.section-a #protein #intro {
+    position: relative;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6em;
+    font-weight: 200;
+    color: #333345;
+}
+
+.section-a #protein #viewport {
+    position: relative;
+    display: block;
+    margin: auto;
+    width:70vw; 
+    height:70vw; 
+    top: 2vh;
+}
+
+.section-a #protein #tag {
+    position: relative;
+    font-size: 0.6em;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    top: 1em;
+    text-align: center;
+    color: #333345;
 }
 
 /* Section b */
 
 .section-b {
     z-index: 1; 
-    top: 2em;
+    top: 10vh;
     position: relative;
+    background-color: #A0D7EB;
+    width: 100vw;
     padding: 2em;
 }
 
-.section-b .img {
-    filter: grayscale(1);
+.section-b .sub {
+    color: #fff;
+}
+
+.section-b #intro {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.6em;
+    color: #333345;
+    margin-top: 2em;
+}
+
+.p {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 1em;
+    color: #338BDE;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.6em;
+    background-color: #daeef2;
+    border-radius: 10px;
+    padding: 0.8em 1.3em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #333345;
 }
 
 /* Section c */
 
 .section-c {
     z-index: 1; 
-    top: 2em;
+    top: 10vh;
     position: relative;
+    width: 100vw;
     padding: 2em;
 }
 
-.section-c .svg {
-    width: 65vw;
-}
-
-.section-c .placeholder {
-    font-size: 1em;
-    color: #333;
+.section-c #project {
     position: relative;
+    top: 5vh;
+    width: 70vw;
 }
 
-/* FOOTER */
-.fa {
-    padding: 1em;
-    font-size: 0.7em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-  
-.fa:hover {
-    opacity: 0.6;
+.section-c #project #P1, .section-c #project #P2, .section-c #project #P3 {
+    cursor: pointer;
+    -webkit-animation: float 3.5s infinite;
+    -moz-animation: float 3.5s infinite;
+    animation: float 3.5s infinite;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: #fff;
-}
-  
-.fa-twitter {
-    background: #55ACEE;
-    color: #fff;
+@-webkit-keyframes float {
+    0% {top: -0.6em;}
+    50% {bottom: 0.6em;}
+    100% {top: -0.6em;}
 }
 
-.fa-github {
-    background: #333;
-    color: #fff;
-}
-  
-.fa-youtube {
-    background: #FF0000;
-    color: #fff;
-}
-  
-.fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    color: #fff;
+@-moz-keyframes float {
+    0% {top: -0.6em;}
+    50% {bottom: 0.6em;}
+    100% {top: -0.6em;}
 }
 
-.fa-linkedin {
-    background: #0e76a8;
-    color: #fff;
+@keyframes float {
+    0% {top: -0.6em;}
+    50% {bottom: 0.6em;}
+    100% {top: -0.6em;}
+}
+
+.section-c #click {
+    font-size: 0.5em;
+    font-family: 'Lato', sans-serif;
+    padding: 2em;
+}
+
+.credit {
+    position: relative;
+    top: 6em;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.3em;
+    font-style: italic;
+}
+
+
+/* Section d */
+
+.section-d {
+    z-index: 1; 
+    top: 10vh;
+    position: relative;
+    width: 80vw;
+    padding: 2em;
+}
+
+.slick-slide {
+    margin: 2em 2em;
+}
+
+.slick-slide img {
+    width: 3em;
+    display: block;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+
+#mc_embed_signup {
+    display: block;
+    margin: auto;
+    padding: 0em;
+    font-size: 0.6em;
+    width:100%;}
+
+.footer {
+    margin-top: 2em;
+}
+
+.footer .fa {
+    cursor: pointer;
+    color: #9E9E9E;
+    width: 0.5em;
+}
+
+.footer #text {
+    cursor: none;
+    font-size: 0.5em;
+    color: #9E9E9E;
+}
+
+@media (min-width: 700px) {
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-a #igem {
+        width: 70vh;
+    }
+
+    .section-a #protein { 
+        top: 95vh;
+        left: 50vw;
+        transform: translate(-50%, -50%)
+    }
+
+    .section-a #protein #viewport {
+        width:50vw; 
+        height:50vw; 
+    }
+
+    .slick-slide img {
+        width: 4em;
+        display: block;
+    }
+
+}
+
+@media (min-width: 1000px){
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sub {
+        left: 10vw;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2em;
+    }
+
+    .section-a #background {
+        top:0em;
+        width: 65%;
+    }
+
+    .section-a #igem {
+        position: relative;
+        top: 16vh;
+        left: 7vw;
+        width: 80vh;
+    }
+
+    .section-a #type {
+        font-size: 1.4em;
+    }
+
+    .section-a #protein {
+        position: absolute;
+        top: 80vh;
+        left: 70vw;
+        display: block;
+        transform: translate(-50%, -50%);
+    }
+
+    .section-a #protein #viewport {
+        width:40vw; 
+        height:40vw; 
+    }
+
+    .section-b {
+        padding: 6em;
+    }
+
+    .section-b #intro {
+        font-size: 0.7em;
+    }
+
+    .btn {
+        font-size: 0.8em;
+    }
+
+    .section-c {
+        padding: 6em;
+    }
+
+    .section-c #click {
+        font-size: 0.7em;
+        padding: 2em;
+    }
+    
+    .credit {
+        top: 4em;
+        font-size: 0.6em;
+        padding: 2em;
+    }
+
+    .section-d {
+        top: 3vh;
+        padding: 6em;
+    }
+
+    .slick-slide img {
+        width: 4em;
+        display: block;
+    }
+
+    .footer {
+        margin: 1em;
+        margin-top: 2em;
+    }
+
+    .footer .fa {
+        width: 0.8em;
+    }
+    
+    .footer #text {
+        font-size: 0.6em;
+    }
+
 }
